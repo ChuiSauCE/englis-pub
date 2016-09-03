@@ -1,0 +1,72 @@
+.rezervation
+  padding: 30px 0
+  font-family: 'Kaushan Script', cursive
+  form.rez-form
+    margin-top: -400px
+		perspective: 1200px
+  .rez-form
+    box-shadow: -10px 10px 34px 0px rgba(0,0,0,0.75)
+    position: relative
+    height: 400px
+    color: $basiccolor
+    width: 360px
+    padding: 0 0 30px
+    margin: 0 auto
+    background: wheat
+    border-radius: 15px
+    border: 2px solid $navhovercolor
+    legend
+      line-height: 30px
+      text-align: center
+      color: $navhovercolor
+      padding: 5px 0
+      border-radius: 0 0 20px 20px
+      border-color: $navhovercolor
+    input
+      font-weight: bold
+      width: 300px
+      margin: 0 auto
+      background: none
+      border: none
+      box-shadow: none
+      border-radius: 0
+      border-bottom: 1px dotted grey
+      &:focus
+        outline: none
+    .date
+      display: flex
+      justify-content: center
+      &>.day
+        margin: 0 20px 0 0
+      label
+        color: black
+        width: 100%
+        text-align: center
+      input
+        width: 150px
+    .sendbutton
+      margin-top: 30px
+      a
+        background: linear-gradient(to bottom,$navhovercolor 0,$darkergreen 100%)
+  .r-back
+    position: relative
+    text-align: center
+    h4
+      padding: 10px 20px 0
+      text-align: center
+      color: black
+      
+.animout
+  transform-origin: left center
+  animation: out 1000ms ease-in-out forwards
+
+@keyframes out
+  0%
+    transform: rotateY(0) translateX(0)
+    z-index: 0
+  50%
+    transform: rotateY(-180deg) translateX(0)
+    z-index: -1
+  100%
+    transform: rotateY(-180deg) translateX(-360px)
+    z-index: -1

@@ -1,0 +1,21 @@
+@font-face {
+  font-family: RobotoSlab;
+  src: url(fonts/robotoslab/RobotoSlab-Regular.ttf);
+  font-weight: normal; }
+
+@font-face {
+  font-family: RobotoSlab;
+  src: url(fonts/robotoslab/RobotoSlab-Bold.ttf);
+  font-weight: bold; }
+
+@font-face {
+  font-family: RobotoSlab;
+  src: url(fonts/robotoslab/RobotoSlab-Thin.ttf);
+  font-weight: 100; }
+
+@font-face {
+  font-family: RobotoSlab;
+  src: url(fonts/robotoslab/RobotoSlab-Light.ttf);
+  font-weight: 200; }
+
+/*# sourceMappingURL=_fonts.css.map */

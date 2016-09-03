@@ -1,0 +1,18 @@
+{
+    "path": {
+        "assets/css/main.sass": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "../css/",
+                "imagePath": null,
+                "sourceComments": "map",
+                "outputStyle": "nested"
+            },
+            "eqFTP.projectsPaths": [
+                "C:/xampp/htdocs/kaplanslidetry"
+            ],
+            "linting.collapsed": false,
+            "themes.theme": "khrystalz-ui"
+        }
+    }
+}

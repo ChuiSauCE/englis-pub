@@ -1,0 +1,122 @@
+.header-holder
+  background: url(../img/navbg.jpg) no-repeat center center
+  box-shadow: 0px 10px 21px 5px rgba(0,0,0,0.75)
+  .micon-holder
+    padding: 5px 10px
+    text-align: right
+    a
+      font-size: 12px
+      margin-right: 5px
+      transition: .3s
+      color: $basiccolor
+      &:hover
+        color: $navhovercolor
+  .nav-mobil
+    display: none
+  .logo-holder
+    text-align: center
+    margin: 10px
+  .navbar-default
+    background: none
+    border: none
+    border-radius: 0px
+    margin-bottom: 0
+    border-bottom: 5px solid rgba(1,1,1,.6)
+    ul.navbar-nav
+      display: flex
+      width: 100%
+      flex-wrap: wrap
+      justify-content: center
+      margin-bottom: -5px
+      li
+        width: 160px
+        text-align: center
+      a
+        background: none
+        padding-bottom: 7px
+        padding-top: 20px
+        color: $basiccolor
+        transition: .3s
+        border-bottom: 5px solid rgba(0, 0, 0, 0)
+        &:hover
+          color: $navhovercolor
+          border-bottom: 5px solid $navhovercolor
+      a.curerntpage
+        color: $navhovercolor
+        border-bottom: 5px solid $navhovercolor
+      li.open
+        a
+          color: $navhovercolor
+          border-bottom: 5px solid $navhovercolor
+          background: none
+        .dropdown-menu
+          a
+            color: $darkbasic
+            border-bottom: none
+            padding-top: 10px
+            &:hover
+              color: $navhovercolor
+              background-color: #e8e8e8
+@media only screen and (max-width: 992px)
+  .header-holder .navbar-default ul.navbar-nav li
+    width: 137px
+    .dropdown-menu 
+      width: 137px
+      min-width: 137px
+@media only screen and (max-width: 768px)
+  .header-holder .nav-mobil
+    display: block
+    width: 100%
+    ul
+      .dropdown-menu a
+        padding-top: 10px
+        height: 35px
+      margin: 0
+      padding: 0
+      list-style: none
+      li
+        width: 160px
+        margin: 0 auto
+        text-align: center
+        a
+          display: inline-block
+          color: $basiccolor
+          height: 50px
+          padding-top: 20px
+          box-sizing: border-box
+          border-bottom: 4px solid rgba(1, 1, 1, 0)
+          width: 100%
+          &:hover
+            text-decoration: none
+            color: $navhovercolor
+            border-bottom: 4px solid $navhovercolor
+      li.open
+        .divider
+          margin: 0
+        ul.yemek-menu
+          li
+            font-size: 12px
+            &:hover
+              background-color: #e8e8e8
+            span
+              color: black
+              display: inline-block
+              text-align: center
+              width: 30px
+              margin-left: 10px
+          li.y-i
+            text-align: left
+        a
+          border-bottom: 4px solid $navhovercolor
+        ul.yemek-menu li.dropdown-header
+          background: green
+          color: white
+          padding: 5px
+          font-size: 14px
+        .dropdown-menu li a
+          color: $darkbasic
+          border-bottom: 4px solid rgba(1, 1, 1, 0)
+          &:hover
+            border-bottom: 4px solid $navhovercolor
+  .nav-main
+    display: none

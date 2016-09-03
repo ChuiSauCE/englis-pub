@@ -1,0 +1,99 @@
+#map-canvas {
+	margin: 0;
+	padding: 0;
+	height: 400px;
+	max-width: none;
+    box-shadow: -8px 10px 34px 8px rgba(0,0,0,0.75);
+}
+#map-canvas img {
+	max-width: none !important;
+}
+.gm-style-iw {
+	width: 350px !important;
+	top: 15px !important;
+	left: 0px !important;
+	background-color: #2d1912;
+	box-shadow: 0 1px 6px rgba(72,128,13,0.6);
+	border: 1px solid rgba(72,128,13,0.6);
+	border-radius: 2px 2px 10px 10px;
+}
+#iw-container {
+	margin-bottom: 10px;
+}
+#iw-container .iw-title {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+	padding: 10px;
+	background-color: #48800d;
+	color: white;
+	margin: 0;
+	border-radius: 2px 2px 0 0;
+}
+#iw-container .iw-content {
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+	margin-right: 1px;
+	padding: 15px 5px 20px 15px;
+	max-height: 140px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.iw-title a{
+  color: #2d1912;
+}
+.iw-title a:hover{
+  text-decoration: none;
+  cursor: pointer;
+}
+.iw-content>p{
+  color: gainsboro;
+}
+.iw-content img {
+	float: right;
+	margin: 0 5px 5px 10px;	
+}
+.iw-subTitle {
+	font-size: 16px;
+	font-weight: 700;
+	padding: 5px 0;
+  color: gainsboro;
+}
+.iw-bottom-gradient {
+	position: absolute;
+	width: 326px;
+	height: 25px;
+	bottom: 10px;
+	right: 18px;
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+}
+.turn-me-on{
+  animation: hot-action 1000ms ease-in-out forwards;
+  transform-origin: center center;
+}/*
+.disp-me{
+  animation: disp-back 500ms ease-in-out forwards;
+}*/
+@keyframes hot-action{
+  0%{
+    transform: rotateY(0);
+  }
+  50%{
+    transform: rotateY(90deg);
+  }
+  100%{
+    transform: rotateX(0);
+  }
+/*  @keyframes disp-back{
+    0%{
+      z-index: -1;
+    }
+    100%{
+      z-index: 2;
+    }
+  }
+}*/
